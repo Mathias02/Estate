@@ -7,13 +7,14 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover"
 import { ChevronDownIcon, Menu } from 'lucide-react'
+import Categories from './Categories'
 
 const Header = () => {
   return (
     <div className='flex items-center justify-between bg-gray-100 px-9'>
         <div className='py-5 ml-5'>
-           <Link href={'/'}><Image src={'/contract.png'}  width={50}  height={50}  alt='logo' className='ml-3'/></Link> 
-            <p className='text-green-600'>Your home</p>
+           <Link href={'/'}><Image src={'/contract.png'}  width={50}  height={50}  alt='logo' className='ml-9'/></Link> 
+            <p className='text-green-600 mt-1'>MTDM Real Estate</p>
         </div>
         
         <ul className='hidden md:flex gap-5 justify-end capitalize'>
@@ -23,8 +24,10 @@ const Header = () => {
             <li className='flex items-center justify-center hover:text-green-600'>
                  <Link href={'/'}>
                     <Popover as Child>
-                      <PopoverTrigger className='flex'>Categories<ChevronDownIcon /></PopoverTrigger>
-                      <PopoverContent>Place content for the popover here.</PopoverContent>
+                      <PopoverTrigger className='flex items-center'>Categories<ChevronDownIcon /></PopoverTrigger>
+                      <PopoverContent>
+                         <Categories />
+                      </PopoverContent>
                     </Popover>
                  </Link>
             </li>
