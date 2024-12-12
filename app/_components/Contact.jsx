@@ -15,7 +15,7 @@ const Contact = () => {
             <div className="lg:grid lg:min-h-4xl lg:grid-cols-12">
                 <aside className="relative block h-16 lg:order-last lg:col-span-5 lg:h-full xl:col-span-6">
                 <img
-                    alt=""
+                    alt="image"
                     src={'/istockphoto-954542342-612x612.jpg'}
                     className="absolute inset-0 h-full w-full object-cover"
                 />

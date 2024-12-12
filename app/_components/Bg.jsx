@@ -3,7 +3,7 @@ import React from 'react'
 
 const Bg = () => {
   return (
-    <div className='relative bg-slate-500'>
+    <div className='relative bg-slate-500 -z-10'>
       <div className='bg-gradient-to-tr from-green-950 w-full h-96 relative'>
         <Image src={'/image.jpg'} width={500} height={200} alt='bgImage' className='object-cover w-full h-full absolute mix-blend-overlay' />
         <div className='p-24'>
